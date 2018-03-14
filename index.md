@@ -9,6 +9,6 @@
 
 아래로 방문해 주세요.
 
-<https://whiletrue0222.github.io/pnotes/>
+<https://whiletrue0222.com/pnotes/>
 
-<https://whiletrue0222.github.io/lifelog/>
+<https://whiletrue0222.com/lifelog/>
