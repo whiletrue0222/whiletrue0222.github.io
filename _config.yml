@@ -29,13 +29,34 @@ markdown: kramdown
 theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
+  - jekyll-github-metadata
+
+repository: whiletrue0222/whiletrue0222.github.io
+timezone: Asia/Seoul
+
+# 여기는 프로젝트 페이지가 아니라 사용자 페이지다. jekyll-github-metadata 는 이 값을
+# API 응답으로 추론하는데 인증이 없으면 true 로 잘못 잡혀서, slate 테마의
+# "View on GitHub" 배너와 푸터가 원래 없던 자리에 붙는다. 명시적으로 고정한다.
+github:
+  is_project_page: false
+
+# 클래식 GitHub Pages 빌드가 테마 레이아웃을 자동으로 씌워줬기 때문에 index.md 에는
+# layout 이 없다. 순정 Jekyll 은 주입해주지 않으므로 여기서 기본값을 지정한다.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - mise.toml
+  - vendor
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
