@@ -4,7 +4,7 @@ gem "jekyll", "~> 4.4"
 gem "jekyll-theme-slate", "~> 0.2"
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.17"
+  gem "jekyll-feed", "~> 0.18"
   # 테마 레이아웃이 site.github.* 를 참조한다 (헤더, 푸터, CSS 캐시 버스팅).
   gem "jekyll-github-metadata", "~> 2.16"
 end
